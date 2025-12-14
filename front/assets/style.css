@@ -435,6 +435,7 @@ margin: 0;
 padding-left: 10px;
 font-size: 50px;
 font-weight: 500;
+word-break: break-all;
 }
 div#comment_post_section {
 display: flex;
@@ -660,6 +661,9 @@ display: flex;
     }
     p.main_header_small {
     font-size: 15px;
+    }
+    div.author_section p {
+    font-size: 30px;
     }
 }
 @media (max-width: 600px) {
@@ -940,6 +944,9 @@ display: flex;
     p#logout_message {
     width: 250px;
     font-size: 20px;
+    }
+    div.author_section p {
+    font-size: 25px;
     }
 }
 @media (max-width: 300px) {

@@ -1266,11 +1266,15 @@ await setup_header_page();
                 method: 'GET'
                 }).then(response => response.blob().then(blob_pfp => {
                 const img_url = URL.createObjectURL(blob_pfp);
+                let pfp_wrapper = document.createElement('div');
+                pfp_wrapper.id = 'pfp_wrapper';
+                pfp_wrapper.classList.add('image_wrapper');
+                document.getElementById('author_section').append(pfp_wrapper);
                 let author_pfp = document.createElement('img');
                 author_pfp.src = img_url;
                 author_pfp.draggable = false;
                 author_pfp.id = 'user_pfp';
-                document.getElementById('author_section').append(author_pfp);
+                document.getElementById('pfp_wrapper').append(author_pfp);
                 let author_name = document.createElement('p');
                 author_name.textContent = user_data.name;
                 author_name.id = 'author_name';
