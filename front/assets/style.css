@@ -530,6 +530,9 @@ font-size: 20px;
 div#form_upload_section div.upload_section * {
 margin: 0;
 }
+div.image_wrapper {
+display: flex;
+}
 @media (max-width: 1050px) {
     p .main_header_big {
     font-size: 60px;
